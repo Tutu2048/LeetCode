@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/${question.code.method}.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/sum-root-to-leaf-numbers.md" />
+              <option name="frontendQuestionId" value="leetcode.cn129" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/sum-root-to-leaf-numbers.cpp" />
+              <option name="titleSlug" value="sum-root-to-leaf-numbers" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/3Etpl5.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/3Etpl5.md" />
+              <option name="frontendQuestionId" value="leetcode.cnLCR 049" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/3Etpl5.cpp" />
+              <option name="titleSlug" value="3Etpl5" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/Sum Root to Leaf Numbers.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/sum-root-to-leaf-numbers.md" />
+              <option name="frontendQuestionId" value="leetcode.cn129" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/sum-root-to-leaf-numbers.cpp" />
+              <option name="titleSlug" value="sum-root-to-leaf-numbers" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[1963]使字符串平衡的最小交换次数.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/使字符串平衡的最小交换次数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1963" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/使字符串平衡的最小交换次数.cpp" />
+              <option name="titleSlug" value="minimum-number-of-swaps-to-make-the-string-balanced" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/copy-list-with-random-pointer.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/copy-list-with-random-pointer.md" />
+              <option name="frontendQuestionId" value="leetcode.cn138" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/copy-list-with-random-pointer.cpp" />
+              <option name="titleSlug" value="copy-list-with-random-pointer" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/longest-increasing-subsequence.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/longest-increasing-subsequence.md" />
+              <option name="frontendQuestionId" value="leetcode.cn300" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/longest-increasing-subsequence.cpp" />
+              <option name="titleSlug" value="longest-increasing-subsequence" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/minimum-number-of-swaps-to-make-the-string-balanced.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/使字符串平衡的最小交换次数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1963" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/使字符串平衡的最小交换次数.cpp" />
+              <option name="titleSlug" value="minimum-number-of-swaps-to-make-the-string-balanced" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/sum-root-to-leaf-numbers.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/sum-root-to-leaf-numbers.md" />
+              <option name="frontendQuestionId" value="leetcode.cn129" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/sum-root-to-leaf-numbers.cpp" />
+              <option name="titleSlug" value="sum-root-to-leaf-numbers" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/使字符串平衡的最小交换次数.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/使字符串平衡的最小交换次数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1963" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/使字符串平衡的最小交换次数.cpp" />
+              <option name="titleSlug" value="minimum-number-of-swaps-to-make-the-string-balanced" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/divide-array-into-equal-pairs.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/divide-array-into-equal-pairs.md" />
+              <option name="frontendQuestionId" value="leetcode.com2206" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/divide-array-into-equal-pairs.cpp" />
+              <option name="titleSlug" value="divide-array-into-equal-pairs" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
