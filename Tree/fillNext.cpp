@@ -2,25 +2,25 @@
 
 #include "../normal.h"
 /*
-* ����һ����������
+* 给定一个二叉树：
 struct Node {
   int val;
   Node *left;
   Node *right;
   Node *next;
 }
-�������ÿ�� next ָ�룬�����ָ��ָ������һ���Ҳ�ڵ㡣����Ҳ�����һ���Ҳ�ڵ㣬�� next ָ������Ϊ nullptr ��
-��ʼ״̬�£����� next ָ�붼������Ϊ nullptr ��
+填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 nullptr 。
+初始状态下，所有 next 指针都被设置为 nullptr 。
 
-ʾ�� 1��
+示例 1：
 
-���룺root = [1,2,3,4,5,nullptr,7]
-�����[1,#,2,3,#,4,5,7,#]
-���ͣ�������������ͼ A ��ʾ����ĺ���Ӧ���������ÿ�� next ָ�룬��ָ������һ���Ҳ�ڵ㣬��ͼ B ��ʾ�����л�������������˳���� next ָ�����ӣ���'#' ��ʾÿ���ĩβ��
-ʾ�� 2��
+输入：root = [1,2,3,4,5,nullptr,7]
+输出：[1,#,2,3,#,4,5,7,#]
+解释：给定二叉树如图 A 所示，你的函数应该填充它的每个 next 指针，以指向其下一个右侧节点，如图 B 所示。序列化输出按层序遍历顺序（由 next 指针连接），'#' 表示每层的末尾。
+示例 2：
 
-���룺root = []
-�����[]*/
+输入：root = []
+输出：[]*/
 
 struct Node :public TreeNode{
     int val;
@@ -39,7 +39,7 @@ public:
         queue<Node *> q;
         q.push(root);
         while (!q.empty()) {
-            int size = q.size();//����ֱ������for�жϣ���Ϊ�Զ�������ɾ����
+            int size = q.size();//不能直接用于for判断，因为对队列有增删操作
             Node *pre = nullptr;
             for (int i = 0; i <size ; ++i) {
                 Node *cur = q.front();
@@ -60,7 +60,7 @@ public:
     Node *connect2(Node *root) {
         Node *cur = root;
         Node *levelCur = nullptr;
-        Node *levelHead= nullptr;//���� ÿ��ĵ�һ��
+        Node *levelHead= nullptr;//层序 每层的第一个
         while(cur) {
             if(!levelHead) {
                 if (cur->left) { levelHead = cur->left; }
@@ -118,6 +118,6 @@ int main() {
     test.connect2(root);
 
 
-    //��һ������˼·���ö���ʵ�ֲ������
-    //����������˼·����С�ռ临�Ӷȣ�����nextָ����ʵ�ֲ������
+    //法一：常见思路，用队列实现层序遍历
+    //法二：特殊思路，减小空间复杂度，利用next指针来实现层序遍历
 }

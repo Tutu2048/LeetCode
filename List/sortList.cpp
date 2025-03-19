@@ -1,31 +1,31 @@
 /*
-*148. ÅÅÐòÁ´±í
-¸øÄãÁ´±íµÄÍ·½áµã head £¬Çë½«Æä°´ ÉýÐò ÅÅÁÐ²¢·µ»Ø ÅÅÐòºóµÄÁ´±í ¡£
-Ê¾Àý 1£º
-ÊäÈë£ºhead = [4,2,1,3]
-Êä³ö£º[1,2,3,4]
+*148. æŽ’åºé“¾è¡¨
+ç»™ä½ é“¾è¡¨çš„å¤´ç»“ç‚¹ head ï¼Œè¯·å°†å…¶æŒ‰ å‡åº æŽ’åˆ—å¹¶è¿”å›ž æŽ’åºåŽçš„é“¾è¡¨ ã€‚
+ç¤ºä¾‹ 1ï¼š
+è¾“å…¥ï¼šhead = [4,2,1,3]
+è¾“å‡ºï¼š[1,2,3,4]
 *
-Ê¾Àý 2£º
-ÊäÈë£ºhead = [-1,5,3,4,0]
-Êä³ö£º[-1,0,3,4,5]
+ç¤ºä¾‹ 2ï¼š
+è¾“å…¥ï¼šhead = [-1,5,3,4,0]
+è¾“å‡ºï¼š[-1,0,3,4,5]
 *
-Ê¾Àý 3£º
-ÊäÈë£ºhead = []
-Êä³ö£º[]
+ç¤ºä¾‹ 3ï¼š
+è¾“å…¥ï¼šhead = []
+è¾“å‡ºï¼š[]
 *
-ÌáÊ¾£º
-Á´±íÖÐ½ÚµãµÄÊýÄ¿ÔÚ·¶Î§ [0, 5 * 104] ÄÚ
+æç¤ºï¼š
+é“¾è¡¨ä¸­èŠ‚ç‚¹çš„æ•°ç›®åœ¨èŒƒå›´ [0, 5 * 104] å†…
 -105 <= Node.val <= 105
-½ø½×£ºÄã¿ÉÒÔÔÚ O(n log n) Ê±¼ä¸´ÔÓ¶ÈºÍ³£Êý¼¶¿Õ¼ä¸´ÔÓ¶ÈÏÂ£¬¶ÔÁ´±í½øÐÐÅÅÐòÂð£¿
+è¿›é˜¶ï¼šä½ å¯ä»¥åœ¨ O(n log n) æ—¶é—´å¤æ‚åº¦å’Œå¸¸æ•°çº§ç©ºé—´å¤æ‚åº¦ä¸‹ï¼Œå¯¹é“¾è¡¨è¿›è¡ŒæŽ’åºå—ï¼Ÿ
 */
 #include "../normal.h"
 class Solution {
 public:
     ListNode* sortList(ListNode* head) {
-        //³£¹æ²åÈëÅÅÐò O£¨n^2£©
+        //å¸¸è§„æ’å…¥æŽ’åº Oï¼ˆn^2ï¼‰
         if(head==NULL || head->next==NULL) return head;
 
-        //¸ù¾ÝÌáÒéÉèÖÃÒ»¸ö×ã¹»Ð¡µÄÊý×Ö
+        //æ ¹æ®æè®®è®¾ç½®ä¸€ä¸ªè¶³å¤Ÿå°çš„æ•°å­—
         ListNode *headPre = new ListNode(-1000,head);
         ListNode *last = head, *pre = headPre;
         while (last != NULL) {
@@ -49,7 +49,7 @@ public:
     }
 
     void insertNode(ListNode *cur,ListNode* preNode, ListNode *newNode) {
-        //ÍÑÁ´×Ó
+        //è„±é“¾å­
         preNode->next = newNode->next;
         //insert
         newNode->next = cur->next;
@@ -57,7 +57,7 @@ public:
     }
 
     ListNode* sortListFast(ListNode* head) {
-        //¹é²¢
+        //å½’å¹¶
         if(head==NULL || head->next==NULL) return head;
 
         int len=1;
@@ -129,8 +129,8 @@ public:
 
 };
 int main() {
-    //»¹¿ÉÒÔÖ±½Ó½»»»Êý×Ö,²»Ö´ÐÐÁ´±íµÄ²åÈë²Ù×÷
-    //µ«Á´±íµÄ²åÈëÐ§ÂÊÒ²ºÜ¸ßÁË¡£
+    //è¿˜å¯ä»¥ç›´æŽ¥äº¤æ¢æ•°å­—,ä¸æ‰§è¡Œé“¾è¡¨çš„æ’å…¥æ“ä½œ
+    //ä½†é“¾è¡¨çš„æ’å…¥æ•ˆçŽ‡ä¹Ÿå¾ˆé«˜äº†ã€‚
     ListNode *head = new ListNode(4);
     head->next = new ListNode(2);
     head->next->next = new ListNode(1);

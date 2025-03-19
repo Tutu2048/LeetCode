@@ -3,14 +3,14 @@
 
 #include "../normal.h"
 /*
-*¸øÄãÒ»¸ö m ÐÐ n ÁÐµÄ¾ØÕó matrix £¬Çë°´ÕÕ Ë³Ê±ÕëÂÝÐýË³Ðò £¬·µ»Ø¾ØÕóÖÐµÄËùÓÐÔªËØ¡£
-*Ê¾Àý 1£º
-*ÊäÈë£ºmatrix = [[1,2,3],[4,5,6],[7,8,9]]
-*Êä³ö£º[1,2,3,6,9,8,7,4,5]
+*ç»™ä½ ä¸€ä¸ª m è¡Œ n åˆ—çš„çŸ©é˜µ matrix ï¼Œè¯·æŒ‰ç…§ é¡ºæ—¶é’ˆèžºæ—‹é¡ºåº ï¼Œè¿”å›žçŸ©é˜µä¸­çš„æ‰€æœ‰å…ƒç´ ã€‚
+*ç¤ºä¾‹ 1ï¼š
+*è¾“å…¥ï¼šmatrix = [[1,2,3],[4,5,6],[7,8,9]]
+*è¾“å‡ºï¼š[1,2,3,6,9,8,7,4,5]
 *
-*Ê¾Àý 2£º
-*ÊäÈë£ºmatrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
-*Êä³ö£º[1,2,3,4,8,12,11,10,9,5,6,7]
+*ç¤ºä¾‹ 2ï¼š
+*è¾“å…¥ï¼šmatrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+*è¾“å‡ºï¼š[1,2,3,4,8,12,11,10,9,5,6,7]
  */
 enum{
   	Right,
@@ -36,8 +36,8 @@ public:
     void spinArray(vector<vector<int>>& v) {
         vector<vector<int>> ret;
         if (v.empty() || v[0].empty()) return ;
-        int rows = v.size();//ÐÐÊý
-        int lines = v[0].size();//ÁÐÊý
+        int rows = v.size();//è¡Œæ•°
+        int lines = v[0].size();//åˆ—æ•°
         for(int i=lines-1;i>=0;--i){
             vector<int> tmp;
             for(int j=0;j<rows;++j) {
@@ -69,9 +69,9 @@ void print(vector<vector<int> > vec) {
 }
 
 int main() {
-    //²Ù×÷(Ðý×ª)Êý×éµÄ´ú¼ÛÌ«´ó
-    //TODO:Ä£Äâ·¨ÕâÖÖ½ØÍ¼  ¸¨ÖúÊý×évisted[][] ºÍ·½ÏòÊý×é[0,1][-1,0][0,-1][1,0] ´ú±íÏò×ó¡¢ÏòÏÂ¡¢ÏòÓÒ¡¢ÏòÉÏ
-    //ÓÃ4¸öÖ¸ÕëÀ´¿ØÖÆ±éÀú£¬ÊÇ¸ÃÌâµÄÐ§ÂÊ½â
+    //æ“ä½œ(æ—‹è½¬)æ•°ç»„çš„ä»£ä»·å¤ªå¤§
+    //TODO:æ¨¡æ‹Ÿæ³•è¿™ç§æˆªå›¾  è¾…åŠ©æ•°ç»„visted[][] å’Œæ–¹å‘æ•°ç»„[0,1][-1,0][0,-1][1,0] ä»£è¡¨å‘å·¦ã€å‘ä¸‹ã€å‘å³ã€å‘ä¸Š
+    //ç”¨4ä¸ªæŒ‡é’ˆæ¥æŽ§åˆ¶éåŽ†ï¼Œæ˜¯è¯¥é¢˜çš„æ•ˆçŽ‡è§£
     vector<vector<int>> v = {{1,2,3},{4,5,6},{7,8,9}};
     print(v);
     Solution s;

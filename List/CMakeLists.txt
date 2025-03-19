@@ -1,10 +1,10 @@
-# ÊÕ¼¯ËùÓÐ .cpp ÎÄ¼þ
+# æ”¶é›†æ‰€æœ‰ .cpp æ–‡ä»¶
 file(GLOB SOURCES "*.cpp")
 
-# ±éÀúÃ¿¸ö .cpp ÎÄ¼þ£¬´´½¨¿ÉÖ´ÐÐÎÄ¼þ
+# éåŽ†æ¯ä¸ª .cpp æ–‡ä»¶ï¼Œåˆ›å»ºå¯æ‰§è¡Œæ–‡ä»¶
 foreach(source_file ${SOURCES})
-    # »ñÈ¡ÎÄ¼þÃû£¨²»°üº¬Â·¾¶ºÍÀ©Õ¹Ãû£©
+    # èŽ·å–æ–‡ä»¶åï¼ˆä¸åŒ…å«è·¯å¾„å’Œæ‰©å±•åï¼‰
     get_filename_component(exe_name ${source_file} NAME_WE)
-    # ´´½¨¿ÉÖ´ÐÐÎÄ¼þ
+    # åˆ›å»ºå¯æ‰§è¡Œæ–‡ä»¶
     add_executable(${exe_name} ${source_file})
 endforeach()
