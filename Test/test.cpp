@@ -9,7 +9,6 @@ int main() {
     string str("Hello12308924\n");
     cout <<str.substr(0,str.find_first_of("0123456789") ) << endl;
     class A;
-    class B(std::move(A));
 
-
+    return 0;
 }

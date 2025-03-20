@@ -59,7 +59,8 @@ public:
         mergeOneIsland(grid, i, j + 1);
     }
 };
-int mian() {
+int main() {
     //题目抽象：将一片连续的“1”即为一座岛屿
     //技巧：搜索+剪枝 深度搜索相邻的“1”,并将其置为“0”
+    return 0;
 }

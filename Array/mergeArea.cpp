@@ -1,6 +1,3 @@
-#include <algorithm>
-#include <bits/ranges_algo.h>
-
 #include "../normal.h"
 /*
 *以数组 intervals 表示若干个区间的集合，其中单个区间为 intervals[i] = [starti, endi] 。

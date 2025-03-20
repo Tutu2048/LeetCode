@@ -12,6 +12,7 @@
 #include <math.h>
 #include <queue>
 #include <map>
+#include <algorithm>
 using namespace  std;
 struct TreeNode {
     int val;

@@ -27,8 +27,8 @@ public:
         return count;
     }
 };
-int mian() {
+int main() {
     //官方解 ：二分查找+位运算！?
 
-
+    return 0;
 }

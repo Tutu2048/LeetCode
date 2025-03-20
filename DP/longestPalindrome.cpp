@@ -23,11 +23,11 @@ public:
     string longestPalindrome(string s) {
         int i = s.size()-1;
 
-
     }
 };
 int main() {
     string s("babad");
     Solution test;
     test.longestPalindrome(s);
+    return 0;
 }
