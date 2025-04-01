@@ -55,7 +55,87 @@ public:
         return res;
     }
 };
-int main(){
+//2025-3-31 时隔1个月再做
+class Solution2
+{
+public:
+    bool exist(vector<vector<char>> &board, string word)
+    {
+        if (board.empty())
+            return false;
+        vector<vector<bool>> visited(board.size(), vector<bool>(board[0].size(), false));
 
+        for (int i = 0; i < board.size(); ++i)
+        {
+            for (int j = 0; j < board[0].size(); ++j)
+            {
+                if (help(board, i, j, word, visited))
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
+    bool help(vector<vector<char>> &board, int i, int j, string target, vector<vector<bool>> &visited)
+    {
+        if (target.empty())
+            return true;
+        if (i < 0 || j < 0 || i >= board.size() || j >= board[0].size() || target[0] != board[i][j] || visited[i][j])
+            return false;
+        visited[i][j] = true;
+
+        bool ret = help(board, i - 1, j, target.substr(1, target.size() - 1), visited) || help(board, i, j - 1, target.substr(1, target.size() - 1), visited) || help(board, i + 1, j, target.substr(1, target.size() - 1), visited) || help(board, i, j + 1, target.substr(1, target.size() - 1), visited);
+        if (!ret)
+            visited[i][j] = false;
+        return ret;
+    }
+};
+// leetcode submit region end(Prohibit modification and deletion)
+#include <cassert>
+void test_word_exists()
+{
+    vector<vector<char>> board = {
+        {'A', 'B', 'C', 'E'},
+        {'S', 'F', 'C', 'S'},
+        {'A', 'D', 'E', 'E'}};
+    Solution s;
+    assert(s.exist(board, "ABCCED") == true); // Word exists
+    assert(s.exist(board, "SEE") == true);    // Word exists
+}
+
+void test_word_not_exists()
+{
+    vector<vector<char>> board = {
+        {'A', 'B', 'C', 'E'},
+        {'S', 'F', 'C', 'S'},
+        {'A', 'D', 'E', 'E'}};
+    Solution s;
+    assert(s.exist(board, "ABCB") == false); // Word does not exist
+    assert(s.exist(board, "XYZ") == false);  // Word does not exist
+}
+
+void test_edge_cases()
+{
+    vector<vector<char>> board1 = {{'A'}}; // Single-character grid
+    Solution s;
+    assert(s.exist(board1, "A") == true);  // Word matches single character
+    assert(s.exist(board1, "B") == false); // Word does not match
+
+    vector<vector<char>> board2 = {};      // Empty grid
+    assert(s.exist(board2, "A") == false); // Word cannot exist in empty grid
+
+    // vector<vector<char>> board3 = {
+    //     {'A', 'B'},
+    //     {'C', 'D'}};
+    // assert(s.exist(board3, "") == true); // Empty word is not valid
+}
+
+int main()
+{
+    test_word_exists();
+    test_word_not_exists();
+    test_edge_cases();
+    cout << "All tests passed!" << endl;
     return 0;
 }
