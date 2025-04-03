@@ -37,21 +37,44 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Trie {
 public:
-    Trie() {
-        
+    Trie():_children(26, nullptr) {
+
     }
     
     void insert(string word) {
-        
+        Trie* tmp =this;
+        for(char& ch:word){
+            int index = ch -'a';
+            if(!tmp->_children[index]){
+                tmp->_children[index]= new Trie();
+            }
+            tmp =tmp->_children[index];
+        }
+        tmp->_end = true;
     }
     
     bool search(string word) {
-        
+        Trie* tmp =this;
+        for(char& ch:word){
+            int index = ch -'a';
+            if(!tmp->_children[index]) return false;
+            tmp =tmp->_children[index];
+        }
+        return tmp->_end;
     }
     
     bool startsWith(string prefix) {
-        
+        Trie* tmp =this;
+        for(char& ch:prefix){
+            int index = ch -'a';
+            if(!tmp->_children[index]) return false;
+            tmp =tmp->_children[index];
+        }
+        return true;
     }
+private:
+    vector<Trie *>  _children;
+    bool _end=false;
 };
 
 /**
@@ -62,3 +85,7 @@ public:
  * bool param_3 = obj->startsWith(prefix);
  */
 //leetcode submit region end(Prohibit modification and deletion)
+
+int main(){
+    return 0;
+}
